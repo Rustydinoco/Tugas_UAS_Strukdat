@@ -21,13 +21,18 @@ typedef struct Node {
 int max(int a, int b) {
     return (a > b) ? a : b;
 }
-
-int getBalance(Node *N) {
+ 
+// Jika ada node, return N->height
+// Jika node kosong, return NULL
+// Fungsi ini menentukan tinggi suatu tree, yang menentukan NULL
+int getHeight(Node *N) {
     if (N == NULL)
         return 0;
     return N-> height;
 }
 
+// Fungsi ini menentukan rotasi suatu tree
+// berat cabang kiri - cabang kanan, tree tidak dapat berat
 int getBalance(Node *N){
     if (N == NULL)
         return 0;
@@ -45,4 +50,12 @@ Node* createNode(long long timeID, char* title, char* desc, int duration) {
     newNode->right = NULL;
     newNode->height = 1;
     return newNode;
+}
+
+Node *rotasiRight (Node *y) {
+    Node *x = y->left;
+}
+
+Node *rotasiLeft (Node *x) {
+    Node *y = x->right;
 }
