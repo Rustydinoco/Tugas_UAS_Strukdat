@@ -18,21 +18,21 @@ typedef struct Node {
 
 // ------------------- Fungsi Pendukung ------------------ //
 
-// Jika ada node, return N->height
-// Jika node kosong, return NULL
-// Fungsi ini menentukan tinggi suatu tree, yang menentukan NULL
 int max(int a, int b) {
     return (a > b) ? a : b;
 }
-
-// Fungsi ini menentukan rotasi suatu tree
-// berat cabang kiri - cabang kanan, tree tidak dapat berat 
+ 
+// Jika ada node, return N->height
+// Jika node kosong, return NULL
+// Fungsi ini menentukan tinggi suatu tree, yang menentukan NULL
 int getHeight(Node *N) {
     if (N == NULL)
         return 0;
     return N-> height;
 }
 
+// Fungsi ini menentukan rotasi suatu tree
+// berat cabang kiri - cabang kanan, tree tidak dapat berat
 int getBalance(Node *N){
     if (N == NULL)
         return 0;
