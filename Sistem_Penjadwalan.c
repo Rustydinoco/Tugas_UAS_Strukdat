@@ -1,3 +1,7 @@
+//  Nama: FACHRY AKBAR PUTRA EDIESTHIA (24081010056)
+//        ACHMAD AFRIAN EKA FITRA (24081010118)
+//        BILAL ACHMAD RAMADHAN (24081010182)
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
